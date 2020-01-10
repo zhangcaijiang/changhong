@@ -1,0 +1,93 @@
+$page_width:1226px;
+$banner_width:1920px;
+$page_container:100%;
+$page_size:14px;
+$div_margin:10px;
+@import "compass/reset";
+$colors:(a:#ffa,b:#ccc,c:#f00,d:#0f0,e:#00f);
+%conbox {
+    width: $page_container;
+    height: 100px;
+    margin: 0 auto;
+}
+%box {
+    width: $page_width;
+    height: 100px;
+    margin: 0 auto;
+}
+%banbox{
+    width: $banner_width;
+    height: 100px;
+    margin: 0 auto;
+}
+//头部
+#top{
+    @extend %conbox; 
+    height: 35px;  
+    background: map-get($colors , a );
+}
+#top .main{
+    @extend %box;
+    height: 35px;
+    background: map-get($colors , c );
+}
+@import "_top";
+#nav{
+    @extend %box;
+    background:map-get($colors , b ) ;
+}
+//背景图
+
+#bannercontainer  .banner{
+    width:100%;
+    height:100px;
+    margin: 0 auto;
+    background:map-get($colors,d) ;
+}
+#bannercontainer .banner .bannermain{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+    background:map-get($colors,e) ;
+}
+//公告
+#notice{
+    @extend %box;
+    background: map-get($colors, d);
+}
+#noticemain{
+    @extend %box;
+    background: map-get($colors, e);
+}
+#TV{
+    @extend %box;
+    background: map-get($colors, d);
+}
+#TVmain{
+    @extend %box;
+    background: map-get($colors, e);
+}
+#air{
+    @extend %box;
+    background: map-get($colors, f);
+}
+#airmain{
+    @extend %box;
+    background: map-get($colors, a);
+}
+#water{
+    @extend %box;
+    background: map-get($colors, f);
+}
+#watermain{
+    @extend %box;
+    background: map-get($colors, a);
+}
+#life{
+    @extend %box;
+    background: map-get($colors, f);
+}
+#lifemain{
+    @extend %box;
+    background: map-get($colors, a);
+}
