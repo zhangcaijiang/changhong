@@ -1,0 +1,4 @@
+#notice{
+    @extend %box;
+    background: map-get($colors, a);
+}

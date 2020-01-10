@@ -1,0 +1,84 @@
+#flow{
+    @extend %box;
+    height: 400px;
+    background: map-get($colors, c);
+    
+}
+.flowtop{
+    width: $page_width;
+    height: 115px;
+    width: $page_width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid grey;         
+        li{
+
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .descrip{
+                margin-left: 15px;
+            }
+        }
+        i{
+            font-size: 40px;
+        }  
+        h1{
+            font-size: 18px;
+        }   
+        p{
+            font-size: 14px;
+            color:grey ;
+            margin-top: 10px;
+        }        
+}
+.flowmiddle{
+    padding: 0 50px;
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .firstli{
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+            ul{
+                padding-top: 10px;
+                margin-left: 40px;
+                li{
+                   padding: 5px;
+                   font-size: 12px;
+                   font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
+                   color: grey;
+                   a{
+                       text-decoration: none;
+                   }
+                }
+                li:first-child{
+                    margin-bottom: 18px;
+                    font-size: 16px;
+                    font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
+                    color: black;
+                }
+
+            }
+            ul:last-child{
+                margin-left: 80px;  
+            }
+        }
+        .secondli{
+
+        }
+    }
+}
+
+
+

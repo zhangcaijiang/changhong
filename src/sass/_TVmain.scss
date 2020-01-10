@@ -1,0 +1,4 @@
+#TVmain{
+    @extend %box;
+    background: map-get($colors, e);
+}

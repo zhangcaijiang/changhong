@@ -1,0 +1,17 @@
+#nav{
+    @extend %box;
+    height: 78px;
+    background:map-get($colors ,e ) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        float: left;
+        width: 90px;
+        height: 78px;
+        line-height: 78px;
+        text-align: center;
+        font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif !important;
+    }
+}

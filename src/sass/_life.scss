@@ -1,0 +1,4 @@
+#life{
+    @extend %box;
+    background: map-get($colors, f);
+}
