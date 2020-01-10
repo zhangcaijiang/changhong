@@ -90,16 +90,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 2, ../sass/_top.scss */
-#top .main ul li a {
-  display: block;
-  height: 35px;
-  width: 145px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 13px;
-  line-height: 35px;
-  float: left;
-  text-decoration: none;
+#top {
+  background: #0f0;
+}
+/* line 5, ../sass/_top.scss */
+#top .main {
+  background: #ccc;
 }
 
 /* line 35, ../sass/index.scss */

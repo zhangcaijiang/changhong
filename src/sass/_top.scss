@@ -1,12 +1,21 @@
 $page_width:1190px;
-#top .main ul li a {
-    display: block;
-    height: 35px;
-    width: 145px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 13px;
-    line-height: 35px;
-    float: left;
-    text-decoration: none;
+#top {
+    @extend %conbox;
+    background: map-get($colors , d );
+    .main{
+        @extend %box; 
+        background: map-get($colors , b );
+        .mainleft{
+            ul{
+                li{
+                    a{
+                    
+                    }
+                }
+            }
+        }
+        .mainright{
+
+        }
+    }
 }
