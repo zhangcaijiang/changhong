@@ -1,0 +1,30 @@
+#aroundmain{
+    @extend %box;
+    background: map-get($colors, f);
+    height: 310px;
+    margin-bottom: 50px;
+}
+.aroundleft{
+    width: 226px;
+    height: 100%;
+    float: left;
+}
+.aroundright{
+    width: 1000px;
+    float: left;
+    ul{
+        width: 1000px;
+        li{
+            width: 240px;
+            height: 310px;
+            float: left;
+            margin-left: 10px;
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 #footer{
     @extend %box;
     height: 215px;
-    background: map-get($colors, e);
+    background: #333333;
     ul{
         display: flex;
         flex-direction: column;

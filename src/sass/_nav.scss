@@ -1,7 +1,7 @@
 #nav{
     @extend %box;
     height: 78px;
-    background:map-get($colors ,e ) ;
+    background:#ffffff ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

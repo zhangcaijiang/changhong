@@ -1,4 +1,31 @@
 #air{
     @extend %box;
     background: map-get($colors, f);
+    height: 60px;
+}
+
+.airleft{
+    width: 215px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    p{
+        border-left: 4px solid  #759dfc;
+        padding-left: 13px;
+    }
+}
+.airright{
+    float: right;
+    width: 200px;
+    height: 100%;
+      ul{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
 }

@@ -1,4 +1,13 @@
 #notice{
     @extend %box;
-    background: map-get($colors, a);
+    height: 38px;
+    background: #f9f9f9;
+    line-height: 38px;
+    span{
+        float: left;
+        margin-right: 5px;
+    }
+    p{
+       float: left;
+    }
 }

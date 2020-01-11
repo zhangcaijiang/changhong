@@ -1,4 +1,29 @@
 #TV{
-    @extend %box;
-    background: map-get($colors, d);
+    @extend %box;  
+    height: 60px;
+}
+.TVleft{
+    width: 215px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    p{
+        border-left: 4px solid #ca694e;
+        padding-left: 13px;
+    }
+}
+.TVright{
+    float: right;
+    width: 463px;
+    height: 100%;
+      ul{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
 }

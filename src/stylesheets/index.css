@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 14, ../sass/index.scss */
-#top .main, #nav, #bannercontainer .banner, #notice, #noticemain, #TV, #TVmain, #air, #airmain, #water, #watermain, #life, #lifemain, #flow, #footer {
+#top .main, #nav, #bannercontainer .banner, #notice, #noticemain, #TV, #TVmain, #air, #airmain, #water, #watermain, #life, #lifemain, #around, #aroundmain, #flow, #footer {
   width: 1226px;
   height: 300px;
   margin: 0 auto;
@@ -81,24 +81,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/_top.scss */
 #top {
   height: 35px;
-  background: #00f;
+  background: #333333;
 }
 /* line 5, ../sass/_top.scss */
 #top .main {
   height: 35px;
-  background: #f00;
+  background: #333333;
 }
 /* line 10, ../sass/_top.scss */
 #top .main .mainleft ul {
   float: left;
 }
 /* line 12, ../sass/_top.scss */
+#top .main .mainleft ul li:first-child {
+  background: #555555;
+}
+/* line 15, ../sass/_top.scss */
+#top .main .mainleft ul li:hover {
+  background: #555555;
+}
+/* line 18, ../sass/_top.scss */
 #top .main .mainleft ul li {
   width: 145px;
   float: left;
   text-align: center;
 }
-/* line 16, ../sass/_top.scss */
+/* line 22, ../sass/_top.scss */
+#top .main .mainleft ul li i {
+  color: white !important;
+}
+/* line 25, ../sass/_top.scss */
 #top .main .mainleft ul li a {
   display: inline-block;
   height: 35px;
@@ -108,23 +120,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 35px;
   text-decoration: none;
 }
-/* line 26, ../sass/_top.scss */
+/* line 35, ../sass/_top.scss */
 #top .main .mainleft ul li:last-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-/* line 31, ../sass/_top.scss */
+/* line 40, ../sass/_top.scss */
 #top .main .mainleft ul li:last-child a {
   margin-left: 5px;
 }
-/* line 38, ../sass/_top.scss */
+/* line 47, ../sass/_top.scss */
 #top .main .mainright ul {
   float: left;
   width: 444.71px;
 }
-/* line 41, ../sass/_top.scss */
+/* line 50, ../sass/_top.scss */
 #top .main .mainright ul li {
   float: left;
   width: 120px;
@@ -134,12 +146,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: center;
   align-items: center;
   line-height: 35px;
+  color: white;
 }
-/* line 50, ../sass/_top.scss */
+/* line 61, ../sass/_top.scss */
 #top .main .mainright ul li p {
   margin-left: 10px;
 }
-/* line 54, ../sass/_top.scss */
+/* line 64, ../sass/_top.scss */
+#top .main .mainright ul li a {
+  color: white;
+}
+/* line 67, ../sass/_top.scss */
+#top .main .mainright ul li span {
+  color: white;
+}
+/* line 72, ../sass/_top.scss */
 #top .main .mainright ul li:first-child {
   width: 84.71px;
   padding: 0;
@@ -148,11 +169,104 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: space-between;
   align-items: center;
 }
+/* line 79, ../sass/_top.scss */
+#top .main .mainright ul li:first-child a:hover {
+  color: red;
+}
+/* line 83, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(2) {
+  position: relative;
+}
+/* line 86, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(2):hover {
+  background: #555555;
+}
+/* line 89, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(2):hover .mychanghong {
+  display: block;
+}
+/* line 92, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(3) {
+  position: relative;
+}
+/* line 94, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(3) img {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  z-index: 100;
+  display: none;
+}
+/* line 102, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(3):hover {
+  background: #555555;
+}
+/* line 105, ../sass/_top.scss */
+#top .main .mainright ul li:nth-child(3):hover img {
+  display: block;
+}
+
+/* line 112, ../sass/_top.scss */
+.mychanghong {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  z-index: 100;
+  display: none;
+  width: 240px;
+  height: 240px;
+  background: white;
+  padding: 20px 20px 40px 20px;
+}
+
+/* line 123, ../sass/_top.scss */
+.myleft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 128, ../sass/_top.scss */
+.myleft h2 {
+  padding-right: 20px;
+}
+/* line 130, ../sass/_top.scss */
+.myleft h2 a {
+  color: blue !important;
+}
+/* line 134, ../sass/_top.scss */
+.myleft p {
+  font-size: 12px;
+}
+/* line 136, ../sass/_top.scss */
+.myleft p a {
+  color: blue !important;
+}
+
+/* line 142, ../sass/_top.scss */
+.myright p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 147, ../sass/_top.scss */
+.myright p a {
+  color: black  !important;
+}
+/* line 150, ../sass/_top.scss */
+.myright p span {
+  color: black  !important;
+}
+/* line 155, ../sass/_top.scss */
+.myright p:nth-child(3) span {
+  display: none;
+}
 
 /* line 1, ../sass/_nav.scss */
 #nav {
   height: 78px;
-  background: #00f;
+  background: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -171,79 +285,532 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/_bannercontainer.scss */
 #bannercontainer {
   height: 480px;
-  background: #ccc;
+  background: #ffa;
 }
-/* line 4, ../sass/_bannercontainer.scss */
+/* line 5, ../sass/_bannercontainer.scss */
 #bannercontainer img {
   width: 100%;
   height: 100%;
+  float: left;
 }
-/* line 10, ../sass/_bannercontainer.scss */
+/* line 12, ../sass/_bannercontainer.scss */
 #bannercontainer .banner {
   height: 480px;
   background: #0f0;
-  position: absolute;
+  position: relative;
 }
-/* line 15, ../sass/_bannercontainer.scss */
-#bannercontainer .banner ul {
+
+/* line 21, ../sass/_bannercontainer.scss */
+.bannerleft ul {
   position: absolute;
   left: 0;
-  top: 113px;
+  top: 0;
 }
-/* line 19, ../sass/_bannercontainer.scss */
-#bannercontainer .banner ul li {
+/* line 25, ../sass/_bannercontainer.scss */
+.bannerleft ul li {
   line-height: 60px;
-  z-index: 100;
   width: 226px;
   height: 60px;
 }
-/* line 23, ../sass/_bannercontainer.scss */
-#bannercontainer .banner ul li span {
+/* line 27, ../sass/_bannercontainer.scss */
+.bannerleft ul li span {
   float: left;
+}
+
+/* line 36, ../sass/_bannercontainer.scss */
+.bannerright {
+  position: absolute;
+  left: 226px;
+}
+/* line 40, ../sass/_bannercontainer.scss */
+.bannerright ul li {
+  width: 450px;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid grey;
+}
+/* line 47, ../sass/_bannercontainer.scss */
+.bannerright .hide {
+  display: none;
 }
 
 /* line 1, ../sass/_notice.scss */
 #notice {
-  background: #ffa;
+  height: 38px;
+  background: #f9f9f9;
+  line-height: 38px;
+}
+/* line 6, ../sass/_notice.scss */
+#notice span {
+  float: left;
+  margin-right: 5px;
+}
+/* line 10, ../sass/_notice.scss */
+#notice p {
+  float: left;
 }
 
 /* line 1, ../sass/_noticemain.scss */
 #noticemain {
-  background: #ffa;
+  height: 160px;
+  background: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+/* line 7, ../sass/_noticemain.scss */
+.noticeleft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+/* line 12, ../sass/_noticemain.scss */
+.noticeleft ul li {
+  float: left;
+  width: 113px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* line 23, ../sass/_noticemain.scss */
+.noticeright {
+  width: 1000px;
+  height: 100%;
+  float: left;
+}
+/* line 27, ../sass/_noticemain.scss */
+.noticeright ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 32, ../sass/_noticemain.scss */
+.noticeright ul li {
+  margin-left: 13px;
+  float: left;
 }
 
 /* line 1, ../sass/_TV.scss */
 #TV {
-  background: #0f0;
+  height: 60px;
+}
+
+/* line 5, ../sass/_TV.scss */
+.TVleft {
+  width: 215px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+}
+/* line 13, ../sass/_TV.scss */
+.TVleft p {
+  border-left: 4px solid #ca694e;
+  padding-left: 13px;
+}
+
+/* line 18, ../sass/_TV.scss */
+.TVright {
+  float: right;
+  width: 463px;
+  height: 100%;
+}
+/* line 22, ../sass/_TV.scss */
+.TVright ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* line 1, ../sass/_TVmain.scss */
 #TVmain {
-  background: #00f;
+  margin-bottom: 30px;
+  height: 630px;
+}
+
+/* line 6, ../sass/_TVmain.scss */
+.TVmainleft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+/* line 10, ../sass/_TVmain.scss */
+.TVmainleft img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../sass/_TVmain.scss */
+.TVmainright {
+  float: left;
+  width: 1000px;
+  height: 100%;
+}
+/* line 21, ../sass/_TVmain.scss */
+.TVmainright ul li {
+  width: 240px;
+  height: 310px;
+  float: left;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* line 33, ../sass/_TVmain.scss */
+.TVmainright ul li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+/* line 38, ../sass/_TVmain.scss */
+.TVmainright ul li p {
+  font-size: 12px;
+}
+/* line 41, ../sass/_TVmain.scss */
+.TVmainright ul li h2 {
+  color: red;
+}
+
+/* line 1, ../sass/_air.scss */
+#air {
+  height: 60px;
+}
+
+/* line 7, ../sass/_air.scss */
+.airleft {
+  width: 215px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+}
+/* line 15, ../sass/_air.scss */
+.airleft p {
+  border-left: 4px solid  #759dfc;
+  padding-left: 13px;
+}
+
+/* line 20, ../sass/_air.scss */
+.airright {
+  float: right;
+  width: 200px;
+  height: 100%;
+}
+/* line 24, ../sass/_air.scss */
+.airright ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* line 1, ../sass/_airmain.scss */
 #airmain {
-  background: #ffa;
+  margin-bottom: 30px;
+  height: 630px;
+}
+
+/* line 6, ../sass/_airmain.scss */
+.airmainleft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+/* line 10, ../sass/_airmain.scss */
+.airmainleft img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../sass/_airmain.scss */
+.airmainright {
+  float: left;
+  width: 1000px;
+  height: 100%;
+}
+/* line 21, ../sass/_airmain.scss */
+.airmainright ul li {
+  width: 240px;
+  height: 310px;
+  float: left;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffffff;
+}
+/* line 34, ../sass/_airmain.scss */
+.airmainright ul li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+/* line 39, ../sass/_airmain.scss */
+.airmainright ul li p {
+  font-size: 12px;
+}
+/* line 42, ../sass/_airmain.scss */
+.airmainright ul li h2 {
+  color: red;
+}
+
+/* line 1, ../sass/_water.scss */
+#water {
+  height: 60px;
+}
+
+/* line 7, ../sass/_water.scss */
+.waterleft {
+  width: 215px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+}
+/* line 15, ../sass/_water.scss */
+.waterleft p {
+  border-left: 4px solid #ff9c00;
+  padding-left: 13px;
+}
+
+/* line 20, ../sass/_water.scss */
+.waterright {
+  float: right;
+  width: 120px;
+  height: 100%;
+}
+/* line 24, ../sass/_water.scss */
+.waterright ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* line 1, ../sass/_watermain.scss */
 #watermain {
   background: #ffa;
+  height: 630px;
+  margin-bottom: 30px;
+}
+
+/* line 7, ../sass/_watermain.scss */
+.watermainleft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+/* line 11, ../sass/_watermain.scss */
+.watermainleft img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, ../sass/_watermain.scss */
+.watermainright {
+  float: left;
+  width: 1000px;
+  height: 100%;
+}
+/* line 22, ../sass/_watermain.scss */
+.watermainright ul li {
+  width: 240px;
+  height: 310px;
+  float: left;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* line 34, ../sass/_watermain.scss */
+.watermainright ul li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+/* line 39, ../sass/_watermain.scss */
+.watermainright ul li p {
+  font-size: 12px;
+}
+/* line 42, ../sass/_watermain.scss */
+.watermainright ul li h2 {
+  color: red;
+}
+
+/* line 1, ../sass/_life.scss */
+#life {
+  height: 60px;
+}
+
+/* line 7, ../sass/_life.scss */
+.lifeleft {
+  width: 215px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+}
+/* line 15, ../sass/_life.scss */
+.lifeleft p {
+  border-left: 4px solid #c59ac7;
+  padding-left: 13px;
+}
+
+/* line 20, ../sass/_life.scss */
+.liferight {
+  float: right;
+  width: 225px;
+  height: 100%;
+}
+/* line 24, ../sass/_life.scss */
+.liferight ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* line 1, ../sass/_lifemain.scss */
 #lifemain {
   background: #ffa;
+  height: 630px;
+  margin-bottom: 30px;
+}
+
+/* line 7, ../sass/_lifemain.scss */
+.lifermainleft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+/* line 11, ../sass/_lifemain.scss */
+.lifermainleft img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, ../sass/_lifemain.scss */
+.lifermainright {
+  float: left;
+  width: 1000px;
+  height: 100%;
+}
+/* line 22, ../sass/_lifemain.scss */
+.lifermainright ul li {
+  width: 240px;
+  height: 310px;
+  float: left;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* line 34, ../sass/_lifemain.scss */
+.lifermainright ul li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+/* line 39, ../sass/_lifemain.scss */
+.lifermainright ul li p {
+  font-size: 12px;
+}
+/* line 42, ../sass/_lifemain.scss */
+.lifermainright ul li h2 {
+  color: red;
+}
+
+/* line 1, ../sass/_around.scss */
+#around {
+  height: 60px;
+  position: relative;
+}
+/* line 6, ../sass/_around.scss */
+#around p {
+  position: absolute;
+  top: 20px;
+  border-left: 4px solid  #ff9c00;
+}
+
+/* line 1, ../sass/_aroundmain.scss */
+#aroundmain {
+  height: 310px;
+  margin-bottom: 50px;
+}
+
+/* line 7, ../sass/_aroundmain.scss */
+.aroundleft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+
+/* line 12, ../sass/_aroundmain.scss */
+.aroundright {
+  width: 1000px;
+  float: left;
+}
+/* line 15, ../sass/_aroundmain.scss */
+.aroundright ul {
+  width: 1000px;
+}
+/* line 17, ../sass/_aroundmain.scss */
+.aroundright ul li {
+  width: 240px;
+  height: 310px;
+  float: left;
+  margin-left: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* line 1, ../sass/_flow.scss */
 #flow {
-  height: 400px;
-  background: #f00;
+  height: 322px;
+  background: #efefef;
 }
 
-/* line 7, ../sass/_flow.scss */
+/* line 6, ../sass/_flow.scss */
 .flowtop {
   width: 1226px;
   height: 115px;
@@ -255,7 +822,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0 25px;
   border-bottom: 1px solid grey;
 }
-/* line 17, ../sass/_flow.scss */
+/* line 16, ../sass/_flow.scss */
 .flowtop li {
   list-style: none;
   display: flex;
@@ -263,76 +830,189 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: space-between;
   align-items: center;
 }
-/* line 24, ../sass/_flow.scss */
+/* line 23, ../sass/_flow.scss */
 .flowtop li .descrip {
   margin-left: 15px;
 }
-/* line 28, ../sass/_flow.scss */
+/* line 27, ../sass/_flow.scss */
 .flowtop i {
   font-size: 40px;
 }
-/* line 31, ../sass/_flow.scss */
+/* line 30, ../sass/_flow.scss */
 .flowtop h1 {
   font-size: 18px;
 }
-/* line 34, ../sass/_flow.scss */
+/* line 33, ../sass/_flow.scss */
 .flowtop p {
   font-size: 14px;
   color: grey;
   margin-top: 10px;
 }
 
-/* line 40, ../sass/_flow.scss */
+/* line 39, ../sass/_flow.scss */
 .flowmiddle {
-  padding: 0 50px;
+  width: 100%;
+  height: 177px;
+  padding: 20px;
 }
-/* line 42, ../sass/_flow.scss */
-.flowmiddle .main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+
+/* line 44, ../sass/_flow.scss */
+.flowfirst {
+  width: 360px;
+  height: 145px;
+  float: left;
 }
-/* line 47, ../sass/_flow.scss */
-.flowmiddle .main .firstli {
-  width: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/* line 48, ../sass/_flow.scss */
+.flowfirst ul {
+  float: left;
+  margin-left: 30px;
 }
-/* line 53, ../sass/_flow.scss */
-.flowmiddle .main .firstli ul {
-  padding-top: 10px;
-  margin-left: 40px;
-}
-/* line 56, ../sass/_flow.scss */
-.flowmiddle .main .firstli ul li {
-  padding: 5px;
+/* line 51, ../sass/_flow.scss */
+.flowfirst ul li {
+  width: 71px;
   font-size: 12px;
-  font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
-  color: grey;
+}
+/* line 55, ../sass/_flow.scss */
+.flowfirst ul li:first-child {
+  font-size: 16px;
+}
+/* line 58, ../sass/_flow.scss */
+.flowfirst ul li:nth-child(2) {
+  margin-top: 26px;
 }
 /* line 61, ../sass/_flow.scss */
-.flowmiddle .main .firstli ul li a {
-  text-decoration: none;
+.flowfirst ul li:nth-child(3) {
+  margin-top: 18px;
 }
-/* line 65, ../sass/_flow.scss */
-.flowmiddle .main .firstli ul li:first-child {
-  margin-bottom: 18px;
-  font-size: 16px;
-  font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
-  color: black;
+/* line 64, ../sass/_flow.scss */
+.flowfirst ul li:nth-child(4) {
+  margin-top: 18px;
 }
-/* line 73, ../sass/_flow.scss */
-.flowmiddle .main .firstli ul:last-child {
+/* line 67, ../sass/_flow.scss */
+.flowfirst ul li:nth-child(5) {
+  margin-top: 18px;
+}
+/* line 71, ../sass/_flow.scss */
+.flowfirst ul:last-child {
   margin-left: 80px;
+}
+
+/* line 75, ../sass/_flow.scss */
+.flowsecond {
+  width: 200px;
+  height: 145px;
+  float: left;
+  margin: 0 40px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* line 85, ../sass/_flow.scss */
+.flowsecond ul {
+  float: left;
+}
+/* line 87, ../sass/_flow.scss */
+.flowsecond ul li {
+  width: 71px;
+  font-size: 12px;
+}
+/* line 91, ../sass/_flow.scss */
+.flowsecond ul li:first-child {
+  font-size: 16px;
+}
+/* line 94, ../sass/_flow.scss */
+.flowsecond ul li:nth-child(2) {
+  margin-top: 26px;
+}
+/* line 97, ../sass/_flow.scss */
+.flowsecond ul li:nth-child(3) {
+  margin-top: 18px;
+}
+/* line 100, ../sass/_flow.scss */
+.flowsecond ul li:nth-child(4) {
+  margin-top: 18px;
+}
+/* line 103, ../sass/_flow.scss */
+.flowsecond ul li:nth-child(5) {
+  margin-top: 18px;
+}
+
+/* line 108, ../sass/_flow.scss */
+.flowthird {
+  width: 230px;
+  height: 145px;
+  padding-left: 38px;
+  float: left;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+/* line 117, ../sass/_flow.scss */
+.flowthird ul li span {
+  display: inline-block;
+  color: red;
+}
+/* line 121, ../sass/_flow.scss */
+.flowthird ul li p {
+  display: inline-block;
+  color: red;
+}
+/* line 126, ../sass/_flow.scss */
+.flowthird ul li:nth-child(2) {
+  margin-top: 15px;
+}
+/* line 129, ../sass/_flow.scss */
+.flowthird ul li:nth-child(3) {
+  margin-top: 27px;
+}
+/* line 132, ../sass/_flow.scss */
+.flowthird ul li:nth-child(4) {
+  margin-top: 20px;
+}
+
+/* line 137, ../sass/_flow.scss */
+.flowfourth {
+  width: 316px;
+  height: 145px;
+  float: left;
+}
+/* line 141, ../sass/_flow.scss */
+.flowfourth ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* line 146, ../sass/_flow.scss */
+.flowfourth ul li {
+  text-align: center;
+  float: left;
+}
+/* line 149, ../sass/_flow.scss */
+.flowfourth ul li img {
+  display: block;
+  width: 108px;
+  height: 108px;
+}
+/* line 154, ../sass/_flow.scss */
+.flowfourth ul li p {
+  margin-top: 10px;
+}
+
+/* line 160, ../sass/_flow.scss */
+.flowbottom {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
 }
 
 /* line 1, ../sass/_footer.scss */
 #footer {
   height: 215px;
-  background: #00f;
+  background: #333333;
 }
 /* line 5, ../sass/_footer.scss */
 #footer ul {
@@ -375,4 +1055,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 12px;
   color: grey;
   margin: 8px 0;
+}
+
+/* line 1, ../sass/_louti.scss */
+#louti {
+  position: fixed;
+  left: 0;
+  top: 200px;
+}
+/* line 6, ../sass/_louti.scss */
+#louti ul li {
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
+}
+/* line 14, ../sass/_louti.scss */
+#louti ul li:hover {
+  background: red;
 }

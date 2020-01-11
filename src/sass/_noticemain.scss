@@ -1,4 +1,37 @@
 #noticemain{
     @extend %box;
-    background: map-get($colors, a);
+    height: 160px;
+    background: #f9f9f9;
+    margin-bottom: 30px;
+}
+.noticeleft{
+    width: 226px;
+    height: 100%;
+    float: left;
+    ul{
+        li{
+            float: left;
+            width: 113px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly ;
+            align-items: center;
+        }
+    }
+}
+.noticeright{
+    width: 1000px;
+    height: 100%;
+    float: left;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        li{
+          margin-left: 13px;
+           float: left;
+        }
+    }
 }

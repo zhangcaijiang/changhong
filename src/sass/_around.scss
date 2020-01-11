@@ -1,0 +1,11 @@
+#around{
+    @extend %box;
+    background: map-get($colors, f);
+    height: 60px;
+    position: relative;
+    p{  
+        position:absolute;
+        top: 20px;
+        border-left: 4px solid  #ff9c00;
+    }
+}
