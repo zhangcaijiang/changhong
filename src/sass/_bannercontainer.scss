@@ -1,24 +1,23 @@
 #bannercontainer  {
     @extend %conbox;
     height: 480px;
-
-    img{
-
-        width: 100%;
-        height: 100%;
-        float: left;
-    }
-    background:map-get($colors,a) ;
+    position: relative;
+    // img{
+    //     position: absolute;
+    //     left: 0;
+    //     height: 0;
+    //     width: 100%;
+    //     height: 100%;
+        
+    // }
        .banner{
         @extend %box;
         height: 480px;
-        background:map-get($colors,d) ;
-        position: relative;
-         
+        position: relative;         
         }
 }
 .bannerleft{
-    ul{    
+    .firsrUl{    
         position: absolute;   
         left: 0;
         top: 0;
@@ -26,17 +25,25 @@
             line-height: 60px;
             span{
                float: left;
-              
-            }               
+               margin-left: 30px;
+               margin-right: 20px;
+            }             
             width:226px ;
             height: 60px;
+        }
+        li:hover{
+            background: red;
+        }
+        li:nth-child(1):hover .bannerright ul{
+           display: block;
         }
     }
 }
 .bannerright{
     position: absolute;
     left:226px ;
-    ul{     
+    ul{ 
+        display: none;    
         li{
             width: 450px;
             height: 80px;
@@ -44,7 +51,64 @@
             border-bottom: 1px solid grey;
         }
     }
-    .hide{
-        display: none;
+}
+
+
+.piclist  {
+    li{
+        position: absolute;
+        left: 0px;
+        top: 0;
+        opacity: 0;
+        img{
+            width: 100%;
+            height:480px;
+            display: block;
+        }
     }
+
+}
+
+
+
+.btnlist {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btnlist  {
+    li{
+        float: left;
+        width: 5px;
+        height: 5px;
+        background: white;
+        text-indent: -99999px;
+        margin-right: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+  
+
+}
+
+#left,
+#right {
+    font-size: 64px;
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    text-decoration: none;
+}
+
+#left {
+    left: 30px;
+}
+
+#right {
+    right: 30px;
+}
+
+.btnlist .active {
+    background: red;
 }

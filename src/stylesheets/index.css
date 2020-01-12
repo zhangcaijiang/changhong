@@ -285,53 +285,114 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/_bannercontainer.scss */
 #bannercontainer {
   height: 480px;
-  background: #ffa;
+  position: relative;
 }
-/* line 5, ../sass/_bannercontainer.scss */
-#bannercontainer img {
-  width: 100%;
-  height: 100%;
-  float: left;
-}
-/* line 12, ../sass/_bannercontainer.scss */
+/* line 13, ../sass/_bannercontainer.scss */
 #bannercontainer .banner {
   height: 480px;
-  background: #0f0;
   position: relative;
 }
 
-/* line 21, ../sass/_bannercontainer.scss */
-.bannerleft ul {
+/* line 20, ../sass/_bannercontainer.scss */
+.bannerleft .firsrUl {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 25, ../sass/_bannercontainer.scss */
-.bannerleft ul li {
+/* line 24, ../sass/_bannercontainer.scss */
+.bannerleft .firsrUl li {
   line-height: 60px;
   width: 226px;
   height: 60px;
 }
-/* line 27, ../sass/_bannercontainer.scss */
-.bannerleft ul li span {
+/* line 26, ../sass/_bannercontainer.scss */
+.bannerleft .firsrUl li span {
   float: left;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+/* line 34, ../sass/_bannercontainer.scss */
+.bannerleft .firsrUl li:hover {
+  background: red;
+}
+/* line 37, ../sass/_bannercontainer.scss */
+.bannerleft .firsrUl li:nth-child(1):hover .bannerright ul {
+  display: block;
 }
 
-/* line 36, ../sass/_bannercontainer.scss */
+/* line 42, ../sass/_bannercontainer.scss */
 .bannerright {
   position: absolute;
   left: 226px;
 }
-/* line 40, ../sass/_bannercontainer.scss */
+/* line 45, ../sass/_bannercontainer.scss */
+.bannerright ul {
+  display: none;
+}
+/* line 47, ../sass/_bannercontainer.scss */
 .bannerright ul li {
   width: 450px;
   height: 80px;
   line-height: 80px;
   border-bottom: 1px solid grey;
 }
-/* line 47, ../sass/_bannercontainer.scss */
-.bannerright .hide {
-  display: none;
+
+/* line 58, ../sass/_bannercontainer.scss */
+.piclist li {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  opacity: 0;
+}
+/* line 63, ../sass/_bannercontainer.scss */
+.piclist li img {
+  width: 100%;
+  height: 480px;
+  display: block;
+}
+
+/* line 74, ../sass/_bannercontainer.scss */
+.btnlist {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* line 81, ../sass/_bannercontainer.scss */
+.btnlist li {
+  float: left;
+  width: 5px;
+  height: 5px;
+  background: white;
+  text-indent: -99999px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* line 95, ../sass/_bannercontainer.scss */
+#left,
+#right {
+  font-size: 64px;
+  color: #fff;
+  position: absolute;
+  top: 150px;
+  text-decoration: none;
+}
+
+/* line 104, ../sass/_bannercontainer.scss */
+#left {
+  left: 30px;
+}
+
+/* line 108, ../sass/_bannercontainer.scss */
+#right {
+  right: 30px;
+}
+
+/* line 112, ../sass/_bannercontainer.scss */
+.btnlist .active {
+  background: red;
 }
 
 /* line 1, ../sass/_notice.scss */
@@ -612,31 +673,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/_watermain.scss */
 #watermain {
-  background: #ffa;
   height: 630px;
   margin-bottom: 30px;
 }
 
-/* line 7, ../sass/_watermain.scss */
+/* line 6, ../sass/_watermain.scss */
 .watermainleft {
   width: 226px;
   height: 100%;
   float: left;
 }
-/* line 11, ../sass/_watermain.scss */
+/* line 10, ../sass/_watermain.scss */
 .watermainleft img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 17, ../sass/_watermain.scss */
+/* line 16, ../sass/_watermain.scss */
 .watermainright {
   float: left;
   width: 1000px;
   height: 100%;
 }
-/* line 22, ../sass/_watermain.scss */
+/* line 21, ../sass/_watermain.scss */
 .watermainright ul li {
   width: 240px;
   height: 310px;
@@ -650,17 +710,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: space-evenly;
   align-items: center;
 }
-/* line 34, ../sass/_watermain.scss */
+/* line 33, ../sass/_watermain.scss */
 .watermainright ul li a {
   font-size: 14px;
   color: #000;
   font-weight: normal;
 }
-/* line 39, ../sass/_watermain.scss */
+/* line 38, ../sass/_watermain.scss */
 .watermainright ul li p {
   font-size: 12px;
 }
-/* line 42, ../sass/_watermain.scss */
+/* line 41, ../sass/_watermain.scss */
 .watermainright ul li h2 {
   color: red;
 }

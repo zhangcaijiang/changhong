@@ -1,6 +1,5 @@
 #watermain{
     @extend %box;
-    background: map-get($colors, a);
     height: 630px;
     margin-bottom: 30px;
 }
