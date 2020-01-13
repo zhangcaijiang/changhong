@@ -10,78 +10,90 @@
     //     height: 100%;
         
     // }
-       .banner{
-        @extend %box;
-        height: 480px;
-        position: relative;         
+    .piclist  {
+        width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        
+        .firstli{
+            width: 1920px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            img{
+                width: 100%;
+                height:480px;
+                display: block;
+            }
         }
-}
-.bannerleft{
-    .firsrUl{    
-        position: absolute;   
-        left: 0;
-        top: 0;
-        li{ 
-            line-height: 60px;
-            span{
-               float: left;
-               margin-left: 30px;
-               margin-right: 20px;
-            }             
-            width:226px ;
-            height: 60px;
-        }
-        li:hover{
-            background: red;
-        }
-        li:nth-child(1):hover .bannerright ul{
-           display: block;
-        }
+        .banner{
+            @extend %box;
+            height: 480px;
+            position: relative; 
+            .bannerleft{
+                position: relative; 
+                .firsrUl{    
+                    position: absolute;   
+                    left: 0;
+                    top: 0;
+                    li{ 
+                        line-height: 60px;
+                        span{
+                           float: left;
+                           margin-left: 30px;
+                           margin-right: 20px;
+                        }             
+                        width:226px ;
+                        height: 60px;
+                        background: rgba(0,0,0,.4);
+                    }
+                    li:hover{
+                        background: red;
+                    }
+                    li:last-child:hover{
+                    background: rgba(0,0,0,.4);
+                    }
+                }
+            }
+            .bannerright{
+              
+                position: absolute;
+                left:226px ;
+                ul{ 
+                    background: white;
+                    display: none;    
+                    li{
+                        width: 450px;
+                        height: 80px;
+                        line-height: 80px;
+                        border-bottom: 1px solid grey;
+                    }
+                }
+            }
+            
+            }
+        
+    
     }
-}
-.bannerright{
-    position: absolute;
-    left:226px ;
-    ul{ 
-        display: none;    
-        li{
-            width: 450px;
-            height: 80px;
-            line-height: 80px;
-            border-bottom: 1px solid grey;
-        }
-    }
-}
-
-
-.piclist  {
-    li{
-        position: absolute;
-        left: 0px;
-        top: 0;
-        opacity: 0;
-        img{
-            width: 100%;
-            height:480px;
-            display: block;
-        }
-    }
-
+    
+    
 }
 
 
 
-.btnlist {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-}
+
+
+
 
 .btnlist  {
+    position: absolute;
+    right: 500px;
+    bottom: 50px;
     li{
         float: left;
-        width: 5px;
-        height: 5px;
+        width: 8px;
+        height: 8px;
         background: white;
         text-indent: -99999px;
         margin-right: 5px;

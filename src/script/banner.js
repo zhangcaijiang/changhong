@@ -2,8 +2,8 @@
     class Lunbo {
         constructor() {
             this.news=document.querySelector('#bannercontainer');
-            this.btns = document.querySelectorAll('.btnlist li');//8个小按钮
-            this.pics = document.querySelectorAll('.piclist li');//8张图片
+            this.btns = document.querySelectorAll('.btnlist li');
+            this.pics = document.querySelectorAll('.piclist li');
             this.arrowright = document.querySelector('#right');
             this.arrowleft = document.querySelector('#left');
             this.index = 0;//存储索引。
@@ -75,6 +75,4 @@
             },4000);
         }
     }
-
-
     new Lunbo().init();

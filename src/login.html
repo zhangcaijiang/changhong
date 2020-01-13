@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #middlemain {
+            width: 100%;
+
+
+        }
+
+        #middle {
+            width: 1226px;
+            margin: 0 auto;
+
+        }
+     
+        fieldset p {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        fieldset legend{
+            margin: 20px 0 0 90px;
+        }
+        .login{
+            margin-left: 90px;
+        }
+        form{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="top">
+
+    </div>
+    <fieldset style="width:500px;height:300px;margin:50px auto;">
+       <form action="">
+        <legend>用户登录</legend>
+        <p><label for="">用户名：</label><input type="text" class="username"></p>
+        <p><label for="">密　码：</label><input type="password" class="password"></p>
+        <p><input type="button" value="登录" class="login"> <a href="registry.html">注册</a></p>
+       </form>
+    </fieldset>
+
+
+
+
+    <div id="bot">
+
+    </div>
+    <script src="script/jquery.js"></script>
+    <script>
+        $('#top').load('./top.html');
+        $('#bot').load('./bottom.html')
+    </script>
+</body>
+
+</html>
