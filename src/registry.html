@@ -38,7 +38,7 @@
     </div>
     <fieldset style="width:500px;height:300px;margin:50px auto;">
         <legend>用户注册</legend>
-        <form action="" method="post">
+        <form action="http://10.31.152.12/changhong/php/register.php" method="post">
             <p><label for="">用户名：</label><input type="text" name="username"><span></span></p>
             <p><label for="">密　码：</label><input type="password" name="password"></p>
             <p><label for="">邮　箱：</label><input type="text" name="email"></p>
@@ -66,6 +66,7 @@
                         username: $user.val()
                     }
                 }).done(function (result) {
+                    console.log(result)
                     if (!result) { //不存在
                         $('span').html('√').css('color', 'green');
                         $userflag = true;
