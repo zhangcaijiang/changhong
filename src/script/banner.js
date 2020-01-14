@@ -1,4 +1,4 @@
-
+!function($){
     class Lunbo {
         constructor() {
             this.news=document.querySelector('#bannercontainer');
@@ -13,7 +13,7 @@
         init() {
             //按钮点击事件
             for (let i = 0; i < this.btns.length; i++) {
-                this.btns[i].onmouseover = () =>{
+                this.btns[i].onclick = () =>{
                     //利用索引思维
                     this.index = i;//索引存储下来了
                     this.tabswitch();
@@ -76,3 +76,6 @@
         }
     }
     new Lunbo().init();
+
+}(jQuery)
+   

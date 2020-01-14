@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/index.css">
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
+
         fieldset p {
             margin: 0 auto;
             margin-top: 30px;
         }
-        fieldset legend{
+
+        fieldset legend {
             margin: 20px 0 0 90px;
         }
-        .registry{
+
+        .registry {
             margin-left: 90px;
         }
-        form{
+
+        form {
             margin: 0 auto;
         }
     </style>
 </head>
+
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <div id="top">
 
     </div>
@@ -38,12 +45,57 @@
             <p><input type="submit" value="注册" name="submit" class="registry"></p>
         </form>
     </fieldset>
-    
+
     <div id="bot"></div>
-    <script src="script/jquery.js"></script>
+
     <script>
         $('#top').load('./top.html');
-        $('#bot').load('./bottom.html')
+        $('#bot').load('./bottom.html');
+
     </script>
+    <script>
+        ! function ($) {
+            let $user = $('input[name="username"]');
+            let $userflag = true;
+
+            $user.on('blur', function () {
+                $.ajax({
+                    type: 'post',
+                    url: 'http://10.31.152.12/changhong/php/register.php',
+                    data: {
+                        username: $user.val()
+                    }
+                }).done(function (result) {
+                    if (!result) { //不存在
+                        $('span').html('√').css('color', 'green');
+                        $userflag = true;
+                    } else {
+                        $('span').html('改用户名已经存在').css('color', 'red');
+                        $userflag = false;
+                    }
+                });
+            });
+
+
+
+
+            $('form').on('submit', function () {
+                if ($user.val() == '') {
+                    $('span').html('请输入用户名').css('color', 'red');
+                    $userflag = false;
+                };
+                if (!$userflag) {
+                    return false;
+                }
+            });
+
+
+        }(jQuery);
+
+    </script>
+    <script src="script/register.js"></script>
+    <script src="script/sha1.js"></script>
+
 </body>
+
 </html>

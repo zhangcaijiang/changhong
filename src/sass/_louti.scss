@@ -1,19 +1,26 @@
-#louti{
-    position: fixed;
-    left: 0;
-    top: 200px;
-    ul{
-        li{
-            width: 45px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            border-bottom: 1px solid grey;
-            font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
+#flowmain{
+    position: relative;
+    #louti{
+        position: fixed;
+        left: 0;
+        top: 200px;
+        display: none;
+        ul{
+            .active{
+                background: red;
+            }
+            li{
+                width: 45px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-bottom: 1px solid grey;
+                font-family: "Microsoft YaHei", "微软雅黑", "Arial", sans-serif;
+            }
+            li:hover{
+                background: red;
+            }
+            
         }
-        li:hover{
-            background: red;
-        }
-        
     }
 }
