@@ -16,7 +16,7 @@
                             <img src="${value.picurl}" alt="">
                             <a href="">${value.title1}</a>
                             <p>${value.title2}</p>
-                            <h2>${value.price}</h2>
+                            <h2>￥${value.price}</h2>
                             </a>
                         </li>
                     `;

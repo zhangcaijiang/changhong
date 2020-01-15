@@ -40,19 +40,16 @@
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="script/login.js"></script>
+
 
     <div id="top">
 
     </div>
     <fieldset style="width:500px;height:300px;margin:50px auto;">
-       <form action="">
         <legend>用户登录</legend>
         <p><label for="">用户名：</label><input type="text" class="username"></p>
         <p><label for="">密　码：</label><input type="password" class="password"></p>
         <p><input type="button" value="登录" class="login"> <a href="registry.html">注册</a></p>
-       </form>
     </fieldset>
 
 
@@ -62,6 +59,8 @@
 
     </div>
     <script src="script/jquery.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/sha1.js"></script>
     <script>
         $('#top').load('./top.html');
         $('#bot').load('./bottom.html')
