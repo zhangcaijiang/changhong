@@ -1,4 +1,4 @@
-;!function($){
+
     class bj{
         constructor(){
           this.li=$('.bannerleft .firsrUl li');
@@ -13,5 +13,7 @@
             }) 
         }
     }
-    new bj().init()
-}(jQuery);
+    
+export{
+    bj
+}

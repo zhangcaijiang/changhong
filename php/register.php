@@ -15,7 +15,7 @@ if(isset($_POST['username'])){
 
 if(isset($_POST['submit'])){
     $username=$_POST['username'];
-    $password=sha1($_POST['password']);//后端加密
+    $password=$_POST['password'];//后端加密
     $email=$_POST['email'];
 
     $conn->query("insert register values(null,'$username','$password','$email',NOW()) ");

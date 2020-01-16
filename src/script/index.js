@@ -1,9 +1,11 @@
-;!function($){
+
      class render{
           constructor(){
             this.TVmainright=$('.TVmainright')
           }
           init() {
+            var sha1 = require('sha1');
+            console.log(sha1);
             $.ajax({
                 url: 'http://10.31.152.12/changhong/php/changhong.php',
                 dataType: 'json'
@@ -26,5 +28,6 @@
             });
         }
      }
-     new render().init()
-}(jQuery)
+export{
+    render 
+}

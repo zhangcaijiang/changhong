@@ -1,11 +1,10 @@
-;
-(function ($) {
+    
     class Cartlist {
         constructor() {
             this.itemlist = $('.item-list');
         }
         init() {
-        
+            var sha1 = require('sha1');
             if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
                 console.log(localStorage.getItem('cartsid').split(','));
                 console.log(localStorage.getItem('cartnum').split(','));
@@ -16,7 +15,7 @@
                 }
             }
 
-         
+            console.log(sha1)
             this.allselect();
          
             this.valuechange();
@@ -193,9 +192,9 @@
 
     }
 
-    new Cartlist().init();
-
-})(jQuery);
+export{
+    Cartlist
+}
 
 
 

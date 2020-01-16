@@ -1,5 +1,4 @@
-;
-(function ($) {
+
     class Details {
         constructor() {
             //接收sid
@@ -65,9 +64,8 @@
             });
         }
     }
-    new Details().init();
-})(jQuery);
-! function ($) {
+
+
     class Fdj {
         constructor() {
             this.wrap = $('.wrap');
@@ -177,8 +175,9 @@
         }
     }
 
-    new Fdj().init();
-}(jQuery);
-
+export{
+    Details,
+    Fdj
+}
 
 

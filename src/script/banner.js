@@ -1,4 +1,4 @@
-!function($){
+
     class Lunbo {
         constructor() {
             this.news=document.querySelector('#bannercontainer');
@@ -75,7 +75,9 @@
             },4000);
         }
     }
-    new Lunbo().init();
+   
 
-}(jQuery)
+export{
+    Lunbo
+}
    
